@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS shelfi_db;
+
+CREATE DATABASE shelfi_db;
