@@ -38,7 +38,7 @@ Book.init(
         allowNull: true,
       },
       published_year: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.TEXT,
         allowNull: true,
       },
     average_rating: {
