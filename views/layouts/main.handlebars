@@ -11,7 +11,7 @@
 
 <body>
   <header>
-    <h1>Welcome to Shelfi</h1>
+    <h1>Shelfi</h1>
   </header>
   <nav>
     <a href="/">Home</a>
@@ -21,17 +21,30 @@
     <a href="/login">Login</a>
     {{/if}}
   </nav>
+
+
+
+
   <main>
     <aside>
       <h2>Enjoy the Books!</h2>
     </aside>
     <div class="shelf">
+
+
       {{{body}}}
+
+
+
     </div>
   </main>
+
+
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
   {{/if}}
+
+
 </body>
 
 </html>
