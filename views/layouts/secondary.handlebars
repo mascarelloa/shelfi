@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shelfi.</title>
+
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+  <header>
+    <img src="/images/shelfilogo.png">
+  
+  <nav>
+    <a href="/">Home</a> /
+      <a href="/">Shelf</a> /
+        <a href="/">Search</a> /
+    {{#if loggedIn}}
+    <button id="logout" class="btn-no-style">Logout</button>
+    {{else}}
+    <a href="/login">Login</a>
+    {{/if}}
+  </nav>
+</header>
+
+
+{{!-- 
+  <main>
+    <div class="shelf">
+
+
+      {{{body}}}
+
+
+
+    </div>
+  </main> --}}
+
+
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+
+
+</body>
+
+</html>
