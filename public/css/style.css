@@ -1,12 +1,145 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin:0;
+}
+
 header {
-    height: 200px;
+    height: auto;
     display: flex;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-between;
+    align-items:center;
     background-color:green;
+    padding:2%;
+}
+
+header img {
+    height:90px;
 }
 
 header h1 {
+    font-family: Quicksand;
+    font-size: 40px;
+    color:white;
+    text-transform:lowercase;
     
+}
+
+nav {
+    color:white;
+    font-family: Quicksand;
+    font-size: 18px;
+}
+ 
+nav a {
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight:600;
+    color:white;
+    text-transform:uppercase;
+    text-decoration:none;
+    padding-left:15px;
+    padding-right:15px;
+    letter-spacing:1px;
+}
+
+
+
+
+
+#bg-video {
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;  
+  }
+
+
+.bg-overlay {
+    min-width:100%;
+    min-height:100%;
+    background: rgb(38, 133, 81);
+    opacity: .5;
+    position:absolute;
+    /* z-index: 1; */
+}
+  
+  /* Add some content at the bottom of the video/page */
+  .hero-content {
+    position: relative;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    top:100px;
+
+  }
+
+  .hero-content img {
+    height: 130px;
+}
+
+
+.form-container {
+    width:350px;
+    /* background-color:white; */
+    border-radius: 10px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    margin:auto;
+    text-transform:lowercase;
+    font-family: quicksand;
+    margin-top:10px;
+    font-weight:800;
+    letter-spacing:1px;
+    font-size:18px;
+
+}
+
+.form-container button {
+    display:block;
+    background-color:green;
+    border: 0;
+    text-transform:uppercase;
+    font-family: quicksand;
+    font-weight: 800;
+    /* margin-top:10px; */
+    margin-bottom:30px;
+    letter-spacing:1px;
+    float:right;
+
+}
+
+/* h2 {
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight:600;
+    color:white;
+    text-transform:uppercase;
+    text-align:center;
+    margin-top:3%;
+} */
+
+.form-input { 
+    display:block;
+    width:100%;
+    background-color:#E6E6E6;
+    border:0;
+    border-radius: 6px;
+    padding:5px;
+    font-style: italic;
+}
+
+.form-group {
+    margin:10px;
 }
