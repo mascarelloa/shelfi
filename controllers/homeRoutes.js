@@ -1,12 +1,10 @@
 const router = require('express').Router();
 const withAuth = require('../utils/auth');
 
-
-
 // Login route
-router.get('/login', (req, res) => {
+router.get('/', (req, res) => {
     if (req.session.loggedIn) {
-      res.redirect('/');
+      res.redirect('/login');
       return;
     }
     res.render('login');
@@ -21,13 +19,14 @@ router.get('/login', (req, res) => {
   // });
 
 
-
+//server routing to the shelf page.
   router.get('/shelf', withAuth, async (req, res) => {
+    //
     try {
       // Find the logged in user based on the session ID
       const userData = await User.findByPk(req.session.user_id, {
         attributes: { exclude: ['password'] },
-        include: [{ model: Project }],
+        include: [{ model: User }],
       });
   
       const user = userData.get({ plain: true });
