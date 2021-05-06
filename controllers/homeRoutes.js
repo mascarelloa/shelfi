@@ -5,7 +5,7 @@ const withAuth = require('../utils/auth');
 //This is the home/index page route.
 router.get('/', async (req, res) => {
   try {
-    //If the user successfully logs in, then they are redirected to profile.
+    //If the user successfully logs in, then they are redirected to profile page.
     if (req.session.logged_in) {
       res.redirect('/profile');
       return;
@@ -28,7 +28,7 @@ router.get('/profile', withAuth, async (req, res) => {
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
     });
-
+    //The shelf.handlebars will render into secondary.handlebars.
     res.render('shelf', {layout: "secondary.handlebars"});
   } catch (err) {
     res.status(500).json(err);
