@@ -55,9 +55,6 @@ nav a {
 }
 
 
-
-
-
 #bg-video {
     position:fixed;
     right: 0;
@@ -72,7 +69,8 @@ nav a {
     min-height:100%;
     background: rgb(0, 0, 0);
     opacity: 0.9;
-    position:absolute;
+    position:fixed;
+
 }
 
   .hero-content {
@@ -143,6 +141,8 @@ main {
 .books {
     margin-top:50px;
 }
+
+
 .search-bar {
     width:60%;
     display:block;
@@ -176,9 +176,31 @@ h1 {
 }
 
 
+.nav-button{
+    background-color:#166D39;
+    color:white;
+    border:0;
+    text-transform:uppercase;
+    font-family: quicksand;
+    font-weight: 800;
+    letter-spacing:1px;
+    border-radius:4px;
+    margin:10px;
+
+}
+.nav-button:hover {
+    color:black;
+    border:0;
+    transition: 0.4s ease-in-out;
+
+}
+
 
 footer {
     background-color:black;
+    color:white;
     height:175px;
     margin-top: auto;
 }
+
+
