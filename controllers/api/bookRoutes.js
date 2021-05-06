@@ -6,7 +6,7 @@ router.get("/:query", (req, res) => {
     Book.findAll ({where: {title: req.params.query}})
     .then(data) 
 })
-
+ 
 
 
 

@@ -29,7 +29,7 @@ router.get('/profile', withAuth, async (req, res) => {
       attributes: { exclude: ['password'] },
     });
     //The shelf.handlebars will render into secondary.handlebars.
-    res.render('shelf', {layout: "secondary.handlebars"});
+    res.render('shelf', {layout: "secondary.handlebars", logged_in: req.session.logged_in});
   } catch (err) {
     res.status(500).json(err);
   }
