@@ -176,6 +176,7 @@ h1 {
 }
 
 
+
 .nav-button{
     background-color:#166D39;
     color:white;
@@ -186,13 +187,22 @@ h1 {
     letter-spacing:1px;
     border-radius:4px;
     margin:10px;
-
+    font-size:16px;
 }
 .nav-button:hover {
     color:black;
     border:0;
     transition: 0.4s ease-in-out;
 
+}
+
+a,a:active, a:visited {
+    color:white;  
+    text-transform:uppercase;
+    font-family: quicksand;
+    font-weight: 9 00;
+    letter-spacing:1px;  
+    font-size:16px;
 }
 
 
