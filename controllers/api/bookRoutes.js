@@ -27,14 +27,17 @@ router.get('/author/:author', (req, res) => {
 
 // This gets all books by the queried title.
 router.get('/title/:title', (req, res) => {
-    Book.findAll({
-      where: {
-        title: req.params.title
-      }
-    }).then((bookData) => {
-      res.json(bookData);
-    });
+  Book.findAll({
+    where: {
+      title: req.params.title
+    }
+  }).then((bookData) => {
+    const books = bookData.map((books) =>
+    books.get({plain:true}) );
+
+    res.render("title-search",  {layout: "second.handlebars", books});
   });
+});
 
 
   // This gets all books by the queried genre.
