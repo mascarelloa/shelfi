@@ -1,20 +1,26 @@
-Homepage - Login/Sign up. GET AND POST
+Homepage (main.handlebars layout) 
+--using login.handlebars
+--login/sign up  
 
--- the first page is a page with a user log in and user sign up. 
+Shelf (second.handlebars layout) 
+--link to search
+--link to add a book
+
+Search (third.handlebars layout) 
+--using search.handlebars
+--link to author search 
+--link to title search
+
+Author Search (second.handlebars layout) 
+--using author-search.handlebars with author-restuls.handlebars parital.
+--append book data by author
+
+Title Search (second.handlebars layout) 
+--using title-search.handlebars with title-restuls.handlebars parital.
+--append by book data by title
 
 
-Search GET
-
--- user can search for a book by author, title, genre, or rating. 
--- user clicks a button to add book to shelf. 
-
-Shelf PUT AND DELETE
-
--- user can have a shelf where they can view their added books or bookd to read 
--- user can set book to read.
--- user can set book to to be read
--- user can detele book from helf. 
-
-Submit POST
-
--- user can submit a book (with required details) to the database if it does not exist. 
+*maybe this?*
+Add (second.handlebars layout)
+--using add-book.handlebars
+--form to submit book to database.
