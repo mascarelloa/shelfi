@@ -2,13 +2,16 @@
 <h1>Search by author</h1>
 
 <div class="input-group rounded">
-  <input type="search" class="form-control rounded" placeholder="Enter an author's name here..." aria-label="Search"
+  <input id="author-search" type="search" class="form-control rounded search-bar" placeholder="Enter an author's name here..." aria-label="Search"
     aria-describedby="search-addon" />
   <span class="input-group-text border-0" id="search-addon">
-    <i class="fas fa-search"></i>
+    <button id="search-button"><i class="fas fa-search fa-lg"></i></button>
   </span>
 </div>
 
+<div class="results">
+
+{{#each books as | book | }}
 
 <div class="books">
 <div class="card mb-12">
@@ -18,15 +21,27 @@
     </div>
     <div class="col-md-10">
       <div class="card-body">
-        <h5 class="card-title">{{book.title}} The Book's Title</h5>
-        <p>By: {{book.author}} Author</p>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis incidunt a exercitationem, eaque aperiam vel laborum eum quis ducimus illum iste consectetur rem dignissimos, maiores harum. Minus enim impedit odit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis incidunt a exercitationem, eaque aperiam vel laborum eum quis ducimus illum iste consectetur rem dignissimos, maiores harum. Minus enim impedit odit!</p>
-        <a href="#" class="btn btn-primary">Details</a>
+        <h5 class="card-title">{{book.title}}</h5>
+        <p>By: {{book.authors}}</p>
+        <p class="card-text">{{book.description}}</p>
+        <a href="#" class="btn btn-primary">check it out.</a>
       </div>
     </div>
   </div>
 </div>
 </div>
 
+{{/each}}
 
-<script src="/js/search.js"></script>
+
+
+
+
+
+
+</div>
+
+
+
+
+<script src="/js/author-search.js"></script>

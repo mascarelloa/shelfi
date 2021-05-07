@@ -2,14 +2,14 @@ Homepage (main.handlebars layout)
 --using login.handlebars
 --login/sign up  
 
-Shelf (second.handlebars layout) 
+Shelf *Profile (second.handlebars layout) 
 --link to search
 --link to add a book
 
 Search (third.handlebars layout) 
 --using search.handlebars
---link to author search 
---link to title search
+--link to author search page
+--link to title search page
 
 Author Search (second.handlebars layout) 
 --using author-search.handlebars with author-restuls.handlebars parital.

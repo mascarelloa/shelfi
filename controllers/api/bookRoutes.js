@@ -12,10 +12,16 @@ router.get('/', (req, res) => {
 router.get('/author/:author', (req, res) => {
   Book.findAll({
     where: {
+      //use operator to pull like data to input.
       authors: req.params.author
     }
   }).then((bookData) => {
-    res.json(bookData);
+    //This loops through the data to create an array.
+    const books = bookData.map((book) =>
+      book.get({ plain: true })
+    );
+    //This renders the data to the author-search view.
+    res.render("author-search",  {layout: "second.handlebars", books});
   });
 });
 
@@ -29,6 +35,19 @@ router.get('/title/:title', (req, res) => {
       res.json(bookData);
     });
   });
+
+
+  // This gets all books by the queried genre.
+router.get('/genre/:category', (req, res) => {
+  Book.findAll({
+    where: {
+      categories: req.params.category
+    }
+  }).then((bookData) => {
+    res.json(bookData);
+  });
+});
+
 
 
 
