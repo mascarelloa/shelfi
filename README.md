@@ -13,6 +13,9 @@ Using the MVC paradigm, groups have to build and design a full stack web applica
   # Installation
   To run the installation, use the following code:
   To run the installation, use the following code:
+  
+  ## Deployed Application
+  
   # usage
     npm i bcrypt, connect-session-sequelize, dotenv, express, express-handlebars, express-session, handlebars, mysql2, nodemon, sequelize.
   # License
