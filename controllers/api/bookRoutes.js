@@ -40,6 +40,23 @@ router.get("/title/:title", (req, res) => {
   });
 });
 
+
+//This is where I'm trying to get the book to show up. 
+router.get("/title/:title", (req, res) => {
+  Book.findAll({
+    where: {
+      title: { [Op.substring]: "%" + req.params.title + "%" },
+    },
+  }).then((bookData) => {
+    const books = bookData.map((books) => books.get({ plain: true }));
+
+    res.render("title-search", { layout: "second.handlebars", books });
+  });
+});
+
+
+
+
 // This gets all books by the queried genre.
 router.get("/genre/:category", (req, res) => {
   Book.findAll({

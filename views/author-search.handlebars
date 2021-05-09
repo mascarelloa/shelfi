@@ -1,38 +1,43 @@
 
-<h1>Search by author:</h1>
 
-<div class="input-group rounded">
-  <input id="author-search" type="search" class="form-control rounded search-bar" placeholder="Enter an author's name here..." aria-label="Search"
-    aria-describedby="search-addon" />
-  <span class="input-group-text border-0" id="search-addon">
-    <button id="search-button"><i class="fas fa-search fa-lg"></i></button>
-  </span>
+<div class="search">
+  <h1>Search by author:</h1>
+  <input id="author-search" class="search-bar" placeholder="Enter an author's name here..." />
+  <button id="search-button"><i class="fas fa-search fa-lg"></i></button>
+
 </div>
 
 <div class="results">
 
-{{#each books as | book | }}
+  {{#each books as | book | }}
 
-<div class="books">
-<div class="card mb-12">
-  <div class="row g-0">
-    <div class="col-md-2 cover" style="max-width: 175px;">
-      <img src="{{book.thumbnail}}" alt="Book Cover">
+  <div class="book">
+
+    <div class="info">
+      <img src="{{book.thumbnail}}" style="float:left">
+      <h2>{{book.title}}</h2>
+      <h3> By: {{book.authors}}</h3>
+      <h4>ISBN: {{book.isbn13}}<br>
+        Genre: {{book.categories}}<br>
+        Published: {{book.published_year}}<br>
+        Number of Pages: {{book.num_pages}}<br> </h4>
     </div>
-    <div class="col-md-10">
-      <div class="card-body">
-        <h3 class="card-title">{{book.title}}</h3>
-        <h2>By: {{book.authors}}</h2>
-        <p class="card-text">{{book.description}}</p>
-        <a href="#" class=" details btn-no-style">Check it out</a>
-      </div>
+    <hr>
+    <div class="desc">
+      <p>{{book.description}}</p>
     </div>
+
   </div>
-</div>
-</div>
 
-{{/each}}
+
+
+
+  {{/each}}
 
 
 </div>
 <script src="/js/author-search.js"></script>
+
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
