@@ -1,279 +1,307 @@
+/* Main font import. ------------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
-
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-
-
+/* Standard/catch all styling. ------------------------------ */
 * {
-    margin:0;
+  margin: 0;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: quicksand;
+  justify-content: center;
 }
-
-header {
-    height: auto;
-    display: flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    align-items:center;
-    background-color:#166D39;
-    padding:2%;
-}
-
-header img {
-    height:90px;
-}
-
-header h1 {
-    font-family: Quicksand;
-    font-size: 40px;
-    color:white;
-    text-transform:lowercase;
-    
-}
-
-nav {
-    color:white;
-    font-family: Quicksand;
-    font-size: 18px;
-}
- 
-nav a {
-    font-family: Quicksand;
-    font-size: 16px;
-    font-weight:600;
-    color:white;
-    text-transform:uppercase;
-    text-decoration:none;
-    padding-left:15px;
-    padding-right:15px;
-    letter-spacing:1px;
-}
-
-
-#bg-video {
-    position:fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;  
-  }
-
-
-.bg-overlay {
-    min-width:100%;
-    min-height:100%;
-    background: rgb(0, 0, 0);
-    opacity: 0.9;
-    position:fixed;
-
-}
-
-  .hero-content {
-    position: relative;
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items:center;
-    top:100px;
-
-  }
-
-  .hero-content img {
-    height: 130px;
-}
-
-
-.form-container {
-    width:390px;
-    border-radius: 10px;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    margin:auto;
-    text-transform:lowercase;
-    font-family: quicksand;
-    margin-top:10px;
-    font-weight:800;
-    letter-spacing:1px;
-    font-size:18px;
-
-}
-
-.form-container button {
-    display:block;
-    background-color:#166D39;
-    border: 0;
-    text-transform:uppercase;
-    font-family: quicksand;
-    font-weight: 800;
-    margin-bottom:30px;
-    letter-spacing:1px;
-    float:right;
-
-}
-
-.form-input { 
-    display:block;
-    width:100%;
-    border:0;
-    border-radius: 6px;
-    padding:5px;
-    font-style: italic;
-}
-
-.form-group {
-    margin:10px;
-}
-
 
 main {
-    margin:5%;
-}
+    margin: 5%;
+  }
 
-.books {
-    margin-top:50px;
-}
-
-
-.search-bar {
-    width:60%;
-    display:block;
-    padding:5px; 
-    font-family:quicksand;
-    font-size: 16px;
-}
-
-
-
-.cover img {
-    padding: 10px;
-    background-color:black;
-    
-}
-
-
-.card {
-    padding: 20px;
-    max-height: 264px;
-    font-family: quicksand;
-    font-size:16px;
-    font-weight:600;
-}
-
-.card-body p {
-    margin-bottom:30px;
-    margin-top:20px;
-}
-.card-title {
-    font-family: Quicksand;
-    font-size: 30px;
-    color:#166D39;
-    font-weight:900;
-    text-transform:none;
-    line-height:25px;
-}
-
-h2 {
-    font-family: Quicksand;
-    font-size: 20px;
-    color:black;
-    font-weight:900;
-    text-transform:none;
-    line-height:20px;
-}
-
-
-.details{
-    background-color:#166D39;
-    color:white;
-    border:0;
-    text-transform:uppercase;
-    font-family: quicksand;
-    font-weight: 800;
-    letter-spacing:1px;
-    font-size:16px;
-    padding:10px;
-    margin-top:20px;
-}
-
-.details:hover {
-    background-color:black;
-    color:White;
-    transition: 0.4s ease-in-out;
-}
-
-
-#search-button{
-    background-color:transparent;
-    color:#166D39;;
-    border: 0;
-    text-transform:uppercase;
-    font-family: quicksand;
-    font-weight: 800;
-    margin-bottom:30px;
-    letter-spacing:1px;
-    border-radius:4px;
-
-
-
-}
+/* Header styling. ------------------------------ */
 
 h1 {
     font-family: Quicksand;
     font-size: 30px;
-    color:black;
-    font-weight:900;
-    text-transform:lowercase;
-    text-align:left;
-     
+    color: black;
+    font-weight: 900;
+    text-transform: lowercase;
+    text-align: left;
+  }
+
+h2 {
+    font-family: Quicksand;
+    font-size: 25px;
+    color: #166d39;
+    font-weight: 900;
+    text-transform: none;
+    line-height: 25px;
+    padding-top: 5px;
+  }
+  
+h3 {
+    font-family: Quicksand;
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+    text-transform: none;
+    line-height: 18px;
+  }
+  
+h4 {
+    font-family: Quicksand;
+    font-size: 16px;
+    color: rgb(53, 53, 53);
+    font-weight: 500;
+    text-transform: none;
+    line-height: 25px;
+  }
+
+/* Top header styling. ------------------------------ */
+header {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #166d39;
+  padding: 2%;
 }
 
+header img {
+  height: 90px;
+}
 
+nav {
+  color: white;
+  font-family: Quicksand;
+  font-size: 25px;
+  font-weight:900;
+}
 
-.nav-button{
-    background-color:#166D39;
-    color:white;
-    border:0;
-    text-transform:uppercase;
+nav a {
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+/* Top navigation styling. ------------------------------ */
+
+.nav-button {
+    background-color: #166d39;
+    color: white;
+    border: 0;
+    text-transform: uppercase;
     font-family: quicksand;
     font-weight: 800;
-    letter-spacing:1px;
-    border-radius:4px;
-    margin:10px;
-    font-size:16px;
-}
-.nav-button:hover {
-    color:black;
-    border:0;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin: 15px;
+    font-size: 20px;
+  }
+  .nav-button:hover {
+    color: black;
+    border: 0;
     transition: 0.4s ease-in-out;
-
-}
-
-.nav-button a,a:active, a:visited {
- 
-    text-transform:uppercase;
+  }
+  
+  .nav-button a,
+  a:active,
+  a:visited {
+    text-transform: uppercase;
     font-family: quicksand;
     font-weight: 9 00;
-    letter-spacing:1px;  
-    font-size:16px;
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
+
+/* Backsplash homepage styling. ------------------------------ */
+
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
+.bg-overlay {
+  min-width: 200%;
+  min-height: 200%;
+  background: rgb(0, 0, 0);
+  opacity: 0.9;
+  position: fixed;
+  top:-150px;
+}
+
+.hero-content {
+  position: relative;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 30px;
+}
+
+.hero-content img {
+  height: 130px;
+}
+
+/* Login/Sign up form styling. ------------------------------ */
+
+.form-container {
+  width: 390px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  text-transform: lowercase;
+  font-family: quicksand;
+  margin-top: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.submit-button {
+  display: block;
+  background-color: #166d39;
+  border: 0;
+  text-transform: uppercase;
+  font-family: quicksand;
+  font-weight: 800;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  float: right;
+}
+
+.submit-button:hover {
+    background-color:black;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 6px;
+  padding: 5px;
+  font-style: italic;
+}
+
+.form-group {
+  margin: 10px;
+}
+
+
+/* Searchbar styling. ------------------------------ */
+
+.search {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.search-bar {
+  width: 95%;
+  padding: 5px;
+  font-family: quicksand;
+  font-size: 16px;
+}
+
+#search-button {
+    background-color: transparent;
+    color: #166d39;
+    border: 0;
+    text-transform: uppercase;
+    font-family: quicksand;
+    font-weight: 800;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    border-radius: 4px;
+  }
+
+
+/* Book results styling. ------------------------------ */
+
+.results {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.book {
+  width: 500px;
+  margin: 1%;
+  box-shadow: 0 0 20px rgb(228, 228, 228);
+  padding: 20px;
+  display: block;
+}
+
+.info {
+  height: 215px;
+}
+
+.info img {
+  margin-right: 10px;
+  border: 5px solid black;
+}
+
+.desc {
+  height: 100px;
+  overflow: auto;
+  padding-right: 5px;
+  text-align: justify;
+  font-weight: 500;
+}
+
+
+
+
+
+/* Footer styling. ------------------------------ */
 
 footer {
-    background-color:black;
-    color:white;
-    height:175px;
-    margin-top: auto;
+  background-color: black;
+  color: white;
+  height: 175px;
+  margin-top: auto;
+  text-align: center;
+}
+
+footer p {
+  padding-top: 30px;
 }
 
 
+/* Scrollbar styling. ------------------------------ */
 
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+  border-radius: 2px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f3f3f3;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ececec;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #166d39;
+}
