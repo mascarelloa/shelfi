@@ -305,3 +305,87 @@ footer p {
 ::-webkit-scrollbar-thumb:hover {
   background: #166d39;
 }
+
+
+/**** Code for the books css starts here ****/
+.book-container {
+  width: 200px;
+  height: 300px;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 400px;
+}
+
+/* targets the img and the pages/back cover layout to fit this specfic size and rotate sideways a certain degress */
+.bookImg {
+  transform: rotateY(-30deg);
+  position: relative;
+  transform-style: preserve-3d;
+  width: 200px;
+  height: 300px;
+  transition: transform 1s ease;
+  animation: 1s ease 0s 1 initAnimation;
+}
+
+/* gives it the hover animation, so when hovering over the book img it turns right */
+.bookImg:hover {
+  transform: rotate(0deg);
+}
+@keyframes initAnimation {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-30deg);
+  }
+}
+
+/* this gets the img to fit the size of the back & pages layout that created */
+.bookImg > :first-child {
+  position: absolute;
+  background: #0d47a1aa;
+  width: 200px;
+  height: 250px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-shadow: 5px 5px 20px #676;
+}
+
+/* this gives the img the pages layout look */
+.bookImg::before {
+  content: ' ';
+  background: #fff;
+  height: calc(300px - 2 * 3px);
+  width: 50px;
+  top: 3px;
+  position: absolute;
+  transform: translateX(calc(200px - 50px / 2 - 3px)) rotateY(90deg) translateX(calc(50px / 2))
+}
+
+/* this gives the img a back cover layout  */
+.bookImg::after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  width: 200px;
+  height: 250px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background: #01060f;
+  transform: translateZ(-50px);
+  box-shadow: -10px 0 50px 10px rgb(129, 125, 125);
+}
+
+/* Aligns the 1st set of books in a row */
+.booksRowOne{
+    display: flex;
+   flex-direction: row;
+}
+ /* Aligns the 2nd set of books in a row */
+.booksRowTwo{
+  display: flex;
+ flex-direction: row;
+}
+/**** Code for the books css ends here ****/
