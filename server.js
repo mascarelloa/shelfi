@@ -41,7 +41,7 @@ sequelize.sync({ force: false }).then(() => {
 });
 
 
-//This is a new package that creates a loading spinner and message in the terminal when something is running. 
+//This is a new package that creates a loading spinner and message in the terminal when something is running.
 const ora = require('ora');
 const spinner = ora('Check your shelf before you wreck your shelf!').start();
 
