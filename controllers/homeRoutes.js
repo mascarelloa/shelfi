@@ -24,10 +24,12 @@ router.get("/profile", withAuth, async (req, res) => {
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ["password"] },
     });
+    const serializedUser = userData.get({plain:true})
     //The shelf.handlebars will render into secondary.handlebars.
     res.render("shelf", {
       layout: "second.handlebars",
       logged_in: req.session.logged_in,
+      serializedUser
     });
   } catch (err) {
     res.status(500).json(err);

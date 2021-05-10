@@ -15,47 +15,56 @@ body {
 }
 
 main {
-    margin: 5%;
-  }
+  margin: 5%;
+}
 
 /* Header styling. ------------------------------ */
 
 h1 {
-    font-family: Quicksand;
-    font-size: 30px;
-    color: black;
-    font-weight: 900;
-    text-transform: lowercase;
-    text-align: left;
-  }
+  font-family: Quicksand;
+  font-size: 40px;
+  color: black;
+  font-weight: 900;
+  text-transform: lowercase;
+  text-align: left;
+}
 
 h2 {
-    font-family: Quicksand;
-    font-size: 25px;
-    color: #166d39;
-    font-weight: 900;
-    text-transform: none;
-    line-height: 25px;
-    padding-top: 5px;
-  }
-  
+  font-family: Quicksand;
+  font-size: 25px;
+  color: #166d39;
+  font-weight: 900;
+  text-transform: none;
+  line-height: 25px;
+  padding-top: 5px;
+}
+
 h3 {
-    font-family: Quicksand;
-    font-size: 18px;
-    color: black;
-    font-weight: 700;
-    text-transform: none;
-    line-height: 18px;
-  }
-  
+  font-family: Quicksand;
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+  text-transform: none;
+  line-height: 18px;
+}
+
 h4 {
-    font-family: Quicksand;
-    font-size: 16px;
-    color: rgb(53, 53, 53);
-    font-weight: 500;
-    text-transform: none;
-    line-height: 25px;
-  }
+  font-family: Quicksand;
+  font-size: 16px;
+  color: rgb(53, 53, 53);
+  font-weight: 500;
+  text-transform: none;
+  line-height: 25px;
+}
+
+h5 {
+  font-family: Quicksand;
+  font-size: 50px;
+  color: black;
+  font-weight: 900;
+  text-transform: lowercase;
+  text-align: center;
+}
 
 /* Top header styling. ------------------------------ */
 header {
@@ -77,7 +86,7 @@ nav {
   color: white;
   font-family: Quicksand;
   font-size: 25px;
-  font-weight:900;
+  font-weight: 900;
 }
 
 nav a {
@@ -93,32 +102,32 @@ nav a {
 /* Top navigation styling. ------------------------------ */
 
 .nav-button {
-    background-color: #166d39;
-    color: white;
-    border: 0;
-    text-transform: uppercase;
-    font-family: quicksand;
-    font-weight: 800;
-    letter-spacing: 1px;
-    border-radius: 4px;
-    margin: 15px;
-    font-size: 20px;
-  }
-  .nav-button:hover {
-    color: black;
-    border: 0;
-    transition: 0.4s ease-in-out;
-  }
-  
-  .nav-button a,
-  a:active,
-  a:visited {
-    text-transform: uppercase;
-    font-family: quicksand;
-    font-weight: 9 00;
-    letter-spacing: 1px;
-    font-size: 20px;
-  }
+  background-color: #166d39;
+  color: white;
+  border: 0;
+  text-transform: uppercase;
+  font-family: quicksand;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  margin: 15px;
+  font-size: 20px;
+}
+.nav-button:hover {
+  color: black;
+  border: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.nav-button a,
+a:active,
+a:visited {
+  text-transform: uppercase;
+  font-family: quicksand;
+  font-weight: 9 00;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
 
 /* Backsplash homepage styling. ------------------------------ */
 
@@ -136,7 +145,7 @@ nav a {
   background: rgb(0, 0, 0);
   opacity: 0.9;
   position: fixed;
-  top:-150px;
+  top: -150px;
 }
 
 .hero-content {
@@ -185,7 +194,7 @@ nav a {
 }
 
 .submit-button:hover {
-    background-color:black;
+  background-color: black;
 }
 
 .form-input {
@@ -200,7 +209,6 @@ nav a {
 .form-group {
   margin: 10px;
 }
-
 
 /* Searchbar styling. ------------------------------ */
 
@@ -218,17 +226,16 @@ nav a {
 }
 
 #search-button {
-    background-color: transparent;
-    color: #166d39;
-    border: 0;
-    text-transform: uppercase;
-    font-family: quicksand;
-    font-weight: 800;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
-    border-radius: 4px;
-  }
-
+  background-color: transparent;
+  color: #166d39;
+  border: 0;
+  text-transform: uppercase;
+  font-family: quicksand;
+  font-weight: 800;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
 
 /* Book results styling. ------------------------------ */
 
@@ -264,10 +271,6 @@ nav a {
   font-weight: 500;
 }
 
-
-
-
-
 /* Footer styling. ------------------------------ */
 
 footer {
@@ -281,7 +284,6 @@ footer {
 footer p {
   padding-top: 30px;
 }
-
 
 /* Scrollbar styling. ------------------------------ */
 
@@ -306,11 +308,16 @@ footer p {
   background: #166d39;
 }
 
+/* Main profile page shelf styling. ------------------------------ */
 
+.shelf {
+  display: flex;
+  justify-content: space-around;
+}
 /**** Code for the books css starts here ****/
 .book-container {
-  width: 200px;
-  height: 300px;
+  width: 128px;
+  height: 192px;
   margin: 30px;
   display: flex;
   align-items: center;
@@ -323,8 +330,8 @@ footer p {
   transform: rotateY(-30deg);
   position: relative;
   transform-style: preserve-3d;
-  width: 200px;
-  height: 300px;
+  width: 128px;
+  height: 192px;
   transition: transform 1s ease;
   animation: 1s ease 0s 1 initAnimation;
 }
@@ -346,46 +353,50 @@ footer p {
 .bookImg > :first-child {
   position: absolute;
   background: #0d47a1aa;
-  width: 200px;
-  height: 250px;
+  width: 128px;
+  height: 192px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-  box-shadow: 5px 5px 20px #676;
+  /* box-shadow: 5px 5px 20px #676; */
 }
 
 /* this gives the img the pages layout look */
 .bookImg::before {
-  content: ' ';
-  background: #fff;
-  height: calc(300px - 2 * 3px);
+  content: " ";
+  background: rgb(238, 238, 238);
+  height: calc(192px - 2 * 3px);
   width: 50px;
   top: 3px;
   position: absolute;
-  transform: translateX(calc(200px - 50px / 2 - 3px)) rotateY(90deg) translateX(calc(50px / 2))
+  transform: translateX(calc(128px - 50px / 2 - 3px)) rotateY(90deg)
+    translateX(calc(50px / 2));
 }
 
 /* this gives the img a back cover layout  */
 .bookImg::after {
-  content: ' ';
+  content: " ";
   position: absolute;
   left: 0;
-  width: 200px;
-  height: 250px;
+  width: 128px;
+  height: 192px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   background: #01060f;
   transform: translateZ(-50px);
-  box-shadow: -10px 0 50px 10px rgb(129, 125, 125);
+  /* box-shadow: -10px 0 50px 10px rgb(129, 125, 125); */
 }
 
 /* Aligns the 1st set of books in a row */
-.booksRowOne{
-    display: flex;
-   flex-direction: row;
-}
- /* Aligns the 2nd set of books in a row */
-.booksRowTwo{
+.booksRowOne {
   display: flex;
- flex-direction: row;
+  flex-direction: row;
+  position: relative;
+  top: 90px;
+  left: 90px;
+}
+/* Aligns the 2nd set of books in a row */
+.booksRowTwo {
+  display: flex;
+  flex-direction: row;
 }
 /**** Code for the books css ends here ****/
