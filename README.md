@@ -1,41 +1,45 @@
 # Shelfi.
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  ## Description 
-Using the MVC paradigm, groups have to build and design a full stack web application. Included in this project is the use of our own server-side API, user authentication and database that we should be connected to in order to render data to display on our web page.
- ## Deployed Application
- <img width="997" alt="Screen Shot 2021-05-08 at 5 53 31 PM" src="https://user-images.githubusercontent.com/78196245/117554646-00e2aa80-b027-11eb-9dbf-3f341ff582a2.png">
-  <img width="996" alt="Screen Shot 2021-05-08 at 5 54 22 PM" src="https://user-images.githubusercontent.com/78196245/117554652-09d37c00-b027-11eb-9a0c-81c5aeeaafb0.png">
- 
- 
+
+## Description 
+Shelfi is a modern search engine for book lovers to find their next good read. Users can search books by author or title to view a description and details. 
+
+View Shelfi live here: https://myshelfi.herokuapp.com/
+
+
   ## Table of Contents
+  * [Visuals](#visuals)
   * [Installation](#installation)
-  * [usage](#usage)
-  * [License](#license)
-  * [contributors](#contributors)
+  * [Tech](#tech)
+  * [Contributors](#contributors)
   * [Test](#test)
   * [Contact](#contact)
-  # Installation
-  To run the installation, use the following code:
-  To run the installation, use the following code:
-  # usage
-    npm i bcrypt, connect-session-sequelize, dotenv, express, express-handlebars, express-session, handlebars, mysql2, nodemon, sequelize.
-  # License
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+  ## Visuals
+![Capture1](https://user-images.githubusercontent.com/75543740/117880024-9ffce180-b275-11eb-9353-d2b9b03c96eb.PNG)
+![Capture2](https://user-images.githubusercontent.com/75543740/117880027-a1c6a500-b275-11eb-862c-5a072002c5a9.PNG)
+![Capture4](https://user-images.githubusercontent.com/75543740/117880034-a1c6a500-b275-11eb-95dd-87951ce72524.PNG)
+![Capture5](https://user-images.githubusercontent.com/75543740/117880037-a25f3b80-b275-11eb-81ec-a5f202e3d64d.PNG)
   
-  # Contributors
+  ## Installation
+  npm i
+  
+  ## Tech
+  Handlebars, HTML/CSS, JavaScript, Node.js, Express.js, Sequelize, 
+    
+  ## Contributors
   Annie Mascarello, Nico Welcher, Kevin Hidalgo
-  # Test
+  
+  ## Test
   npm run test
-  # Contact
+  
+  ## Contact
   Moving forward, if you have questions or concerns feel free to contact me at the following given communcations: 
 
-
   GitHub: 
-
   Mascarelloa, WelcherNX, Kevinrhidalgo  
 
-  Email 
-
+  Email:
   amfm0793@gmail.com, welchernx1@gmail.com, kevinrhidalgo@yahoo.com  
 
 
