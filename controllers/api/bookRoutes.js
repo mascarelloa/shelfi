@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const Book = require("../../models/book");
+const Book = require("../../models/Book");
 const { Op } = require("sequelize");
 
 // This gets all books.
