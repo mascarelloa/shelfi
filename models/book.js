@@ -2,7 +2,7 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Book extends Model {}
-
+//This defines the book model.
 Book.init(
   {
     isbn13: {
@@ -61,5 +61,5 @@ Book.init(
     modelName: 'book',
   }
 );
-
+//This exports the model to be used throughout.
 module.exports = Book;
