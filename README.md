@@ -17,8 +17,11 @@ View Shelfi live here: https://myshelfi.herokuapp.com/
 
   ## Visuals
 ![Capture1](https://user-images.githubusercontent.com/75543740/117880024-9ffce180-b275-11eb-9353-d2b9b03c96eb.PNG)
+
 ![Capture2](https://user-images.githubusercontent.com/75543740/117880027-a1c6a500-b275-11eb-862c-5a072002c5a9.PNG)
+
 ![Capture4](https://user-images.githubusercontent.com/75543740/117880034-a1c6a500-b275-11eb-95dd-87951ce72524.PNG)
+
 ![Capture5](https://user-images.githubusercontent.com/75543740/117880037-a25f3b80-b275-11eb-81ec-a5f202e3d64d.PNG)
   
   ## Installation
