@@ -31,7 +31,7 @@ View Shelfi live here: https://myshelfi.herokuapp.com/
   Handlebars, HTML/CSS, JavaScript, Node.js, Express.js, Sequelize, 
     
   ## Contributors
-  Annie Mascarello, Nico Welcher, Kevin Hidalgo
+  Annie Mascarello, Kevin Hidalgo
   
   ## Test
   npm run test
